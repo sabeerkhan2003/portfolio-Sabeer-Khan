@@ -555,12 +555,29 @@ footer .social_media_icons a:hover i{
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 768px) {
   body{
-    font-size: 8px;
+    font-size: 12px;
   }
   #main::before {
     display: none;
 
+  }
+  .user_img img{
+    max-height: 20em;
+    margin-bottom: 15em;
+    
+    
+
+  }
+  .user_name{
+    font-size: 12px;
+    margin-top: 0.5em;
+  }
+  .about{
+    height: 20%;
+  }
+  .about_heading{
+    font-size: 2em;
   }
 }
