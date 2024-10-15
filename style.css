@@ -65,7 +65,7 @@ nav ul li a:hover{
 }
 #main {
   width: 100%;
-  height: 41em;
+  height:45em;
   padding: 5em 0;
   backdrop-filter: blur(1px);
   backdrop-filter: contrast(250px);
@@ -118,6 +118,17 @@ background: linear-gradient(270deg, #1A2956, #010101); */
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
+.user_title{
+  color: #EAEAEA;
+}
+.user_name:hover {
+  color: #08d9d6;
+}
+#main p:hover{
+  color: #08d9d6;
+}
+
+
 @keyframes image {
   0%{
       top: 0px;
@@ -174,9 +185,9 @@ background: linear-gradient(270deg, #1A2956, #010101); */
   width: 100%;
   background: #1a1a1a;
   padding: em 0;
-  height: 41em;
+  height: 45em;
   background-image: url('./assests/Screenshot\ 2024-09-22\ 235925.png');
-  backdrop-filter: ;
+  /* backdrop-filter: ; */
   background-blend-mode:multiply ; 
 }
 .about div{
@@ -195,13 +206,16 @@ background: linear-gradient(270deg, #1A2956, #010101); */
 .about img{
   width: 25em;
   margin: 2em;
-  background-blend-mode: ;
+  /* background-blend-mode: ; */
 }
 .about_heading {
   font-size: 3em;
   font-family: var(--font);
-  color: #eaeaea ;
+  color:#ff2e63 ;
   
+}
+.about_heading:hover{
+  color: #b91d73;
 }
 .about p center {
   font-size: 1.6em;
@@ -210,6 +224,15 @@ background: linear-gradient(270deg, #1A2956, #010101); */
   
   
 }
+.center p{
+  text-align: justify;
+  /* margin: 0% 20%; */
+}
+.center p:hover{
+  text-align: justify;
+  color: aqua;
+}
+
 
 /* ---------- skills section ---------- */
 .skills {
@@ -310,6 +333,10 @@ background: linear-gradient(270deg, #1A2956, #010101); */
   flex-direction: column;
   background: #1a1a1a;
   overflow-x: hidden;
+  
+}
+.project_heading:hover{
+  color: #08d9d6;
 }
 .projects::before,
 .projects::after {
@@ -537,11 +564,15 @@ footer .social_media_icons a:hover i{
     width: 12em;
     height: 8em;
   }
+  
 }
 @media (max-width: 450px) {
   #main .user_img img{
-    width: 20em;
-    height: 20em;
+    width: 15em;
+    height: 15em;
+  }
+  #main{
+    height: 560px;
   }
   .projects .container .main_box .icon{
     height: 100%;
@@ -553,6 +584,22 @@ footer .social_media_icons a:hover i{
     height: 100%;
     padding: 2em 0.2em;
   }
+  .center P{
+    text-align:center;
+    letter-spacing: 1px;
+    font-size: 14px; 
+  }
+  /* .skills .center{
+    margin-bottom:50px;
+  } */
+  .projects .project_heading{
+    margin-top: 30px;
+    z-index: 1;
+  }
+  .box p{
+    text-align: start;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -574,6 +621,7 @@ footer .social_media_icons a:hover i{
     font-size: 12px;
     margin-top: 0.5em;
   }
+ 
   .about{
     height: 20%;
   }
