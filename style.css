@@ -567,12 +567,28 @@ footer .social_media_icons a:hover i{
   
 }
 @media (max-width: 450px) {
+  .user_name{
+    text-align: center;
+  }
+  .user_title{
+    text-align: center;
+    display: inline;
+  }
   #main .user_img img{
     width: 15em;
     height: 15em;
+    margin-left:6em;
+  }
+  .user_info{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .user_but{
+    text-align: center;
   }
   #main{
-    height: 560px;
+    height: 49em;
   }
   .projects .container .main_box .icon{
     height: 100%;
